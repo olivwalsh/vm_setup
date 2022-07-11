@@ -22,6 +22,9 @@ sudo apt-get install -y vim git zsh curl
 echo "$blue Installing clang make $reset"
 sudo apt-get install -y clang make
 
+echo "$blue Installing packages including gcc and g++ $reset"
+sudo apt install -y build-essential
+
 echo "$blue Installing readline $reset"
 sudo apt-get install -y libreadline-dev
 
@@ -35,6 +38,10 @@ echo "$orange Remove unattended upgrades"
 sudo apt remove -y unattended-upgrades
 
 sudo apt-get autoremove
+
+# install norminette
+
+./norminette_install.sh
 
 # install OHMYZSH
 
