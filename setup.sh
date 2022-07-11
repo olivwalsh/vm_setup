@@ -43,6 +43,10 @@ sudo apt-get autoremove
 
 ./norminette_install.sh
 
+# install valgrind
+
+sudo apt install valgrind
+
 # install OHMYZSH
 
 echo "$blue installing ohmyzsh $reset"
